@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #FFF;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 3rem;
+    margin: 60px 0 60px 0;
+    color: rgb(47, 173, 102);
+}
+#nav-menu {
+    background-color: rgb(47, 173, 102);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000000;
+}
+#nav-menu-hamburguer {
+    position: relative;
+}
+#ul-menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.li-menu {
+    color: white;
+    font-size: 1rem;
+    margin: 0 30px 0 30px;
+}
+.li-menu:hover {
+    border-bottom: 1px solid #FFF;
+}
+/* Início */
+#article-inicio, #article-receitas{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20% 0 20%;
+}
+#img-decisao {
+    height: 400px;
+    transition: 500ms;
+    cursor: pointer;
+}
+#img-decisao:hover {
+    opacity: 80%;
+}
+
+/* Receitas */
+
+/* Contato */
+
+/* Rodape */
+footer {
+    background-color: rgb(47, 173, 102);
+}
+#button-article-inicio {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    top: 80%;
+    right: 5%;
+    background-color: rgb(54, 201, 117);
+    border: 0 solid rgb(54, 201, 117);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 300ms;
+    z-index: 100000;
+}
+#button-article-inicio:hover {
+    background-color: rgb(47, 173, 102);
+}
+@media (max-width: 850px) {
+    #ul-menu {
+        justify-content: center;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    #article-inicio, #article-receitas {
+        margin: 0 7% 0 7%;
+    }
+    #img-decisao {
+        height: 300px;
+    }
+}
