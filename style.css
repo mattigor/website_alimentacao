@@ -15,6 +15,7 @@ body {
     background-color: #FFF;
 }
 a {
+    color: #FFF;
     text-decoration: none;
 }
 h1 {
@@ -29,9 +30,6 @@ h1 {
     width: 100%;
     z-index: 1000000;
 }
-#nav-menu-hamburguer {
-    position: relative;
-}
 #ul-menu {
     list-style-type: none;
     display: flex;
@@ -39,13 +37,14 @@ h1 {
     justify-content: right;
 }
 .li-menu {
-    color: white;
+    color: #FFF;
     font-size: 1rem;
     margin: 0 30px 0 30px;
 }
 .li-menu:hover {
     border-bottom: 1px solid #FFF;
 }
+
 /* Início */
 #article-inicio, #article-receitas{
     background-color: #FFF;
@@ -87,11 +86,22 @@ h1 {
     background-color: rgb(42, 156, 91)
 }
 
-/* Contato */
-
 /* Rodape */
 footer {
     background-color: rgb(47, 173, 102);
+}
+#nav-rodape {
+    padding: 20px 0 20px 0;
+    margin: 5% 0 0 0;
+}
+#ul-rodape {
+    list-style: rodape;
+}
+.li-rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 10px 0 10px 1vw;
 }
 #button-article-inicio {
     position: fixed;
@@ -106,15 +116,12 @@ footer {
     transition: 300ms;
     z-index: 100000;
 }
-#button-article-inicio:hover {
-    background-color: rgb(47, 173, 102);
-}
 @media (max-width: 850px) {
     #ul-menu {
         justify-content: center;
     }
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     #article-inicio, #article-receitas {
         margin: 0 7% 0 7%;
