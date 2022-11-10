@@ -65,6 +65,27 @@ h1 {
 }
 
 /* Receitas */
+.grid-container-receitas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color:rgb(54, 201, 117);
+    padding: 5px;
+    margin: 5px;
+}
+.grid-item-receitas {
+    background-color:rgb(47, 173, 102);
+    color: #FFF;
+    border: 2px solid rgb(54, 201, 117);
+    padding: 100px 70px 100px 70px;
+    font-size: 2rem;
+    text-align: center;
+    margin: 7px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.grid-item-receitas:hover {
+    background-color: rgb(42, 156, 91)
+}
 
 /* Contato */
 
@@ -100,5 +121,21 @@ footer {
     }
     #img-decisao {
         height: 300px;
+    }
+    .grid-container-receitas {
+        grid-template-columns: auto auto;
+    }
+    .grid-item-receitas {
+        width: 30vw;
+        padding: 120px 40px 120px 40px;
+    }
+}
+@media (max-width: 600px) {
+    .grid-container-receitas {
+        grid-template-columns: auto;
+    }
+    .grid-item-receitas {
+        width: 80vw;
+        padding: 150px 0 150px 0;
     }
 }
