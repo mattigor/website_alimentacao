@@ -95,7 +95,7 @@ footer {
     margin: 5% 0 0 0;
 }
 #ul-rodape {
-    list-style: rodape;
+    list-style-type: none;
 }
 .li-rodape {
     display: flex;
