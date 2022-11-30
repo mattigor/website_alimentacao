@@ -88,6 +88,34 @@ h1 {
 .grid-item-receitas:hover {
     background-color: rgb(42, 156, 91)
 }
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(2px);
+}
+dialog {
+    margin: 5% 10% 5% 10%;
+    height: 70vh;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, .5);
+    position: fixed;
+    cursor: default;
+}
+.center-modal {
+    margin: 10px 15% 10px 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h2-receitas {
+    font-size: 2rem;
+    text-align: center;
+}
+.p-receitas {
+    font-size: 1rem;
+    text-align: justify;
+}
 
 /* Rodape */
 footer {
