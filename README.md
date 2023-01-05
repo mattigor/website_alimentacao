@@ -1,6 +1,6 @@
 ## Projeto Website Alimentação
 
-> Status: Finalizado
+> Status: Em andamento
 
 ## Sobre o projeto
 
