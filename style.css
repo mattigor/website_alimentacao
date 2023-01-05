@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 /* font-family: 'Source Sans Pro', sans-serif; */
-
+:root {
+    --softgreen_text: #2FAD66;
+    --softgreen_button: #36C975;
+}
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -15,7 +18,7 @@ button {
     cursor: pointer;
 }
 .access-button {
-    border-radius: 50px !important;
+    border-radius: 50px;
 }
 a {
     color: #FFF;
@@ -24,7 +27,7 @@ a {
 h1 {
     font-size: 3rem;
     margin: 60px 0 60px 0;
-    color: rgb(47, 173, 102);
+    color: var(--softgreen_text);
     text-align: left;
 }
 p {
@@ -33,7 +36,7 @@ p {
     color: rgba(0, 0, 0, .5);
 }
 #nav-menu {
-    background-color: rgb(47, 173, 102);
+    background-color: var(--softgreen_text);
     padding: 10px;
     position: fixed;
     width: 100%;
@@ -74,47 +77,42 @@ p {
 
 /* Receitas */
 .div-receitas h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-left: 30px;
+}
+.div-receitas p {
+    font-size: .9rem;
+    margin: 0 30px 30px 30px;
 }
 .div-receitas figcaption {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
 }
 .div-receitas img {
-    width: 100%;
-    max-width: 900px;
     height: auto;
-    border-radius: 6px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.div-receitas-descricao {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #EEE;
 }
 
 /* Rodape */
 footer {
-    background-color: rgb(47, 173, 102);
+    background-color: var(--softgreen_text);
 }
 
-#nav-rodape {
-    padding: 20px 0 20px 0;
-    margin: 5% 0 0 0;
-}
-#ul-rodape {
-    list-style-type: none;
-}
-
-.li-rodape {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin: 10px 0 10px 1vw;
-}
 #button-article-inicio {
     position: fixed;
     height: 70px;
     width: 70px;
     top: 80%;
     right: 5%;
-    background-color: rgb(54, 201, 117);
-    border: 0 solid rgb(54, 201, 117);
+    background-color: var(--softgreen_button);
+    border: 0 solid var(--softgreen_button);
     border-radius: 50px;
     transition: 300ms;
     z-index: 100000;
