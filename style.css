@@ -85,7 +85,7 @@ p {
     margin: 0 30px 30px 30px;
 }
 .div-receitas figcaption {
-    text-align: justify;
+    text-align: left;
     margin-bottom: 25px;
     font-size: 1.1rem;
 }
