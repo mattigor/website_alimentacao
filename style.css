@@ -90,6 +90,7 @@ p {
     font-size: 1.1rem;
 }
 .div-receitas img {
+    width: 100%;
     height: auto;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
