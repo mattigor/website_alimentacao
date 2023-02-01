@@ -27,4 +27,4 @@ Website desenvolvido com o objetivo de praticar novos conhecimentos sobre Flexbo
 
 ### Link para o projeto
 
-https://mattigor.github.io/website-alimentacao/
+https://mattigor.github.io/website_alimentacao/
