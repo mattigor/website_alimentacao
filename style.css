@@ -191,7 +191,7 @@ footer {
         margin: 0 7% 0 7%;
     }
     #article-imc-imc {
-        width: 90%;
+        width: 100%;
     }
 }
 @media (max-width: 600px) {
