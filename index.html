@@ -28,6 +28,7 @@
             <ul id="ul-menu">
               <li><a href="#article-inicio" class="li-menu">Início</a></li>
               <li><a href="#article-receitas" class="li-menu">Receitas</a></li>
+              <li><a href="#article-imc" class="li-menu">IMC</a></li>
             </ul>
         </nav>
     </header>
@@ -183,6 +184,24 @@
                         Preaqueça o forno a 200 ºC. Leve a mistura ao forno por, aproximadamente, 40 minutos.<br>
                         Por fim, polvilhe um pouco de cacau em pó sobre o bolho e sirva.
                     </p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="imc">
+        <article id="article-imc">
+            <h1 id="h1-imc">Índice de massa corpórea (IMC)</h1>
+            <p id="p1-imc">Quando se fala de IMC, sabemos que esta não é a forma mais eficaz de medir a saúde de alguém. Por outro lado, esse índice pode nos indicar que precisamos tomar alguns cuidados, ele serve como uma estimativa.
+            A seguir, temos uma calculadora que irá medir seu índice de massa corpórea, o resultado é obtido através da seguinte fórmula: </p>
+            <p id="p2-imc">IMC = MASSA / ALTURA²</p>
+            <div id="article-imc-imc">
+                <div id="article-imc-imc-card">
+                    <label for="article-imc-input-height">Qual a sua altura?</label>
+                    <input type="number" name="article-imc-input-height" class="article-imc-input" id="article-imc-input-height">
+                    <label for="article-imc-input-weight">Quanto você pesa atualmente?</label>
+                    <input type="number" name="article-imc-input-weight" class="article-imc-input" id="article-imc-input-weight">
+                    <input type="button" value="Obter resultado" id="article-imc-input-button" onclick="calculaIMC()">
+                    <span id="resultado"></span>
                 </div>
             </div>
         </article>
