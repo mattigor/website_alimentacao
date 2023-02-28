@@ -5,6 +5,7 @@
 :root {
     --softgreen_text: #2FAD66;
     --softgreen_button: #36C975;
+    --softpurple: #84D;
 }
 * {
     font-family: 'Roboto', sans-serif;
@@ -31,7 +32,7 @@ h1 {
     text-align: left;
 }
 p {
-    text-align: justify;
+    text-align: left;
     font-size: 1.3rem;
     color: rgba(0, 0, 0, .5);
 }
@@ -47,6 +48,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: right;
+    margin-right: 30px;
 }
 .li-menu {
     font-size: 1rem;
@@ -57,7 +59,7 @@ p {
 }
 
 /* Início */
-#article-inicio, #article-receitas {
+#article-inicio, #article-receitas, #article-imc {
     background-color: #FFF;
     display: flex;
     flex-direction: column;
@@ -69,18 +71,20 @@ p {
     width: 100%;
     max-width: 650px;
     height: auto;
-    cursor: pointer;
-}
-#img-decisao:hover {
-    opacity: 80%;
+    cursor: default;
 }
 
 /* Receitas */
+figure {
+    margin: -4px;
+}
 .div-receitas h3 {
+    color: #FFF;
     font-size: 1rem;
     margin-left: 30px;
 }
 .div-receitas p {
+    color: #FFF;
     font-size: .9rem;
     margin: 0 30px 30px 30px;
 }
@@ -96,9 +100,67 @@ p {
     border-top-right-radius: 15px;
 }
 .div-receitas-descricao {
+    margin: 0 -4px 0 -4px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #EEE;
+    background-color: var(--softpurple);
+    box-shadow: 0px 7px 5px rgba(86, 42, 139, .6);
+}
+
+/* IMC */
+#article-imc-imc {
+    display: grid;
+    place-content: center;
+    height: 400px auto;
+    width: 70%;
+    border: 6px solid var(--softgreen_text);
+    border-radius: 8px;
+}
+#article-imc-imc-card {
+    height: auto;
+    margin: 50px 50px 50px 50px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+#p2-imc {
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+label {
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.article-imc-input {
+    font-size: 1.3rem;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid var(--softpurple);
+    border-radius: 5px;
+}
+#article-imc-input-button {
+    cursor: pointer;
+    margin-top: 25px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.3rem;
+    color: #FFF;
+    background-color: var(--softpurple);
+    border: transparent;
+    border-radius: 6px;
+}
+#article-imc-input-button:active {
+    background-color: rgb(112, 55, 183);
+}
+#resultado {
+    margin-top: 30px;
+    font-weight: bolder;
 }
 
 /* Rodape */
@@ -115,18 +177,21 @@ footer {
     background-color: var(--softgreen_button);
     border: 0 solid var(--softgreen_button);
     border-radius: 50px;
-    transition: 300ms;
+    transition: 250ms;
     z-index: 100000;
+}
+#button-article-inicio:active {
+    background-color: #2DA561;
 }
 @media (max-width: 850px) {
     #ul-menu {
         justify-content: center;
     }
-    h1 {
-        font-size: 1.5rem;
-    }
-    #article-inicio, #article-receitas {
+    #article-inicio, #article-receitas, #article-imc {
         margin: 0 7% 0 7%;
+    }
+    #article-imc-imc {
+        width: 90%;
     }
 }
 @media (max-width: 600px) {
