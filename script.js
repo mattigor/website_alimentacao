@@ -16,7 +16,9 @@ function calculaIMC(altura, massa, resultado, valorAltura, valorMassa, imc) {
         resultado.innerHTML = `Seu IMC é ${imc.toFixed(1)} e, segundo a OMS, você está com obesidade classe I.`;
     } else if ((imc > 35) && (imc < 40)) {
         resultado.innerHTML = `Seu IMC é ${imc.toFixed(1)} e, segundo a OMS, você está com obesidade classe II.`;
-    } else {
+    } else if (imc >= 40) {
         resultado.innerHTML = `Seu IMC é ${imc.toFixed(1)} e, segundo a OMS, você está com obesidade classe III.`;
+    } else {
+        resultado.innerHTML = "Por favor, preencha os campos em branco para obter seu resultado.";
     }
 };
