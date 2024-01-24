@@ -103,7 +103,7 @@ figure {
     margin: 0 -4px 0 -4px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: var(--softpurple);
+    background-color: var(--softgreen_text);
     box-shadow: 0px 7px 5px rgba(86, 42, 139, .6);
 }
 
